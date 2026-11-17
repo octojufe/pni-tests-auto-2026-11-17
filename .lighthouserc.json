@@ -1,0 +1,22 @@
+{
+  "ci": {
+    "collect": {
+      "numberOfRuns": 1,
+      "settings": {
+        "preset": "desktop"
+      },
+      "url": [
+        "https://app.resorption-bidonvilles.dihal.gouv.fr/connexion"
+      ]
+    },
+    "assert": {
+      "assertions": {
+        "categories:performance": "off",
+        "categories:pwa": "off",
+        "categories:best-practices": "off",
+        "categories:seo": "off",
+        "categories:accessibility": ["error", { "minScore":  1 }]
+      }
+    }
+  }
+}
